@@ -1,6 +1,4 @@
 cat <<EOF > .gitignore
-media/video/
-*.mp4
 *.mov
 *.zip
 .DS_Store
