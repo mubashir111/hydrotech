@@ -9,7 +9,7 @@
 *
 */
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700,800');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* 
 
@@ -36,6 +36,7 @@ a,
 .menu-cnt>ul>li a,
 .media-box.media-box-down .caption p {
     color: rgb(64, 77, 96);
+    font-family: 'Poppins', sans-serif;
 }
 
 body>nav,
@@ -117,6 +118,7 @@ h6,
 .menu-inner .menu-btn,
 .menu-inner>div>span {
     color: rgb(0, 71, 103);
+    font-family: 'Lexend', sans-serif;
 }
 
 .light .dropdown ul li:not(:hover)>a,
@@ -3278,6 +3280,27 @@ Extra small devices (portrait phones, less than 576px)
     flex-direction: column;
 }
 
-.grid-list .cnt-box .caption p {
-    flex-grow: 1;
+
+/* Header White Theme Overrides */
+body>nav {
+    background-color: #FFF !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    /* Optional subtle shadow */
+}
+
+.menu-cnt>ul>li>a,
+.menu-cnt,
+nav .lan-menu>li>a,
+.menu-btn,
+nav .icon-links:not(.social-colors) a i,
+i.scroll-top-btn {
+    color: rgb(0, 71, 103) !important;
+}
+
+.menu-top-logo>.container:before {
+    background-color: transparent !important;
+}
+
+.light .shop-menu .cart-buttons a {
+    color: #FFF !important;
 }
