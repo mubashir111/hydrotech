@@ -8,7 +8,7 @@ if (file_exists("../../../../../wp-load.php")) {
 }
 
 $emailTo       = '';
-$sender_email = 'contacts@framework-y.com';
+$sender_email = 'muba4shir@gmail.com';
 $subject = 'You received a new message';
 
 $errors = array();
