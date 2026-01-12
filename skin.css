@@ -3304,3 +3304,9 @@ i.scroll-top-btn {
 .light .shop-menu .cart-buttons a {
     color: #FFF !important;
 }
+/* Fix for overflowing email and long text in sidebars */
+.text-list li p {
+    word-break: break-word;
+    overflow-wrap: break-word; /* Standard property */
+    word-wrap: break-word; /* Legacy property */
+}
