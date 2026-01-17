@@ -624,7 +624,22 @@ hr.space-45 {
 
 .section-overflow-top>.container>div:first-child,
 .section-overflow-top>.container>table:first-child {
-    transform: translateY(-90px);
+    transform: translateY(-50px);
+}
+
+.text-nowrap {
+    white-space: nowrap;
+}
+
+.email-fix {
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+@media (max-width: 992px) {
+    .email-fix {
+        font-size: 11px;
+    }
 }
 
 .section-overflow-top>.container>.cnt-box-side>.img-box,
@@ -3304,9 +3319,12 @@ i.scroll-top-btn {
 .light .shop-menu .cart-buttons a {
     color: #FFF !important;
 }
+
 /* Fix for overflowing email and long text in sidebars */
 .text-list li p {
     word-break: break-word;
-    overflow-wrap: break-word; /* Standard property */
-    word-wrap: break-word; /* Legacy property */
+    overflow-wrap: break-word;
+    /* Standard property */
+    word-wrap: break-word;
+    /* Legacy property */
 }
