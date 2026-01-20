@@ -1534,6 +1534,12 @@ footer .col-lg-4:last-child {
     border-radius: 3px;
 }
 
+footer .col-lg-6:last-child {
+    background: rgba(0, 0, 0, 0.11);
+    padding: 30px;
+    border-radius: 3px;
+}
+
 /*
 
 # COMPONENTS
@@ -3061,6 +3067,12 @@ Small devices (landscape phones, less than 768px)
     .pricing-table-big {
         margin-top: 0;
         height: 100%;
+    }
+
+    footer .col-lg-6:last-child {
+
+        padding: 10px;
+
     }
 }
 
