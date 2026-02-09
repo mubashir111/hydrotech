@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Blog | Hydrotech Hydraulic Global - Industry News & Insights</title>
-    <meta name="description"
-        content="Read the latest news, maintenance tips, and industry insights from Hydrotech Hydraulic Global. Expert advice on mobile and industrial hydraulics.">
-    <meta name="keywords" content="Blog, News, Hydraulic Maintenance, Tips, Insights, Hydrotech">
-    <link rel="canonical" href="https://hydrotechglobal.com/blog.html">
+    <title>{{page_title}} | Hydrotech Hydraulic Global UAE</title>
+    <meta name="description" content="{{page_description}}">
+    <meta name="keywords" content="{{page_keywords}}">
+    <link rel="canonical" href="https://hydrotechglobal.com/{{page_filename}}">
+
+    <!-- CSS Files -->
     <link rel="stylesheet" href="themekit/css/bootstrap-grid.css">
     <link rel="stylesheet" href="themekit/css/style.css">
     <link rel="stylesheet" href="themekit/css/glide.css">
@@ -23,27 +24,25 @@
 
 <body>
     <div id="preloader"></div>
+
+    <!-- Navigation -->
     <nav class="menu-top-logo menu-fixed" data-menu-anima="fade-in">
         <div class="container">
             <div class="menu-brand">
                 <a href="index.html">
-                    <img class="logo-default scroll-hide" src="media/logos/hydrotech-logo.webp" alt="logo" />
-                    <img class="logo-retina scroll-hide" src="media/logos/hydrotech-logo.webp" alt="logo" />
-                    <img class="logo-default scroll-show" src="media/logos/hydrotech-logo.webp" alt="logo" />
-                    <img class="logo-retina scroll-show" src="media/logos/hydrotech-logo.webp" alt="logo" />
+                    <img class="logo-default" src="media/logos/hydrotech-logo.webp" alt="logo"
+                        style="max-height: 50px;" />
+                    <img class="logo-retina" src="media/logos/hydrotech-logo.webp" alt="logo"
+                        style="max-height: 50px; display: none;" />
                 </a>
             </div>
             <i class="menu-btn"></i>
             <div class="menu-cnt">
                 <ul id="main-menu">
-
-                    <li class="">
-                        <a href="index.html">HOME</a>
-                    </li>
-                    <li class="">
-                        <a href="about.html">ABOUT US</a>
-                    </li>
-                                        <li class="dropdown mega-dropdown">
+                    <!-- Standard Menu Structure -->
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                                                            <li class="dropdown mega-dropdown active">
                         <a href="products.html">PRODUCTS</a>
                         <div class="mega-menu" style="width: 1200px;">
                             <div class="row">
@@ -79,7 +78,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="dropdown mega-dropdown ">
+                    <li class="dropdown mega-dropdown">
                         <a href="services.html">SERVICES</a>
                         <div class="mega-menu" style="width: 1200px;">
                             <div class="row">
@@ -125,104 +124,116 @@
                             </div>
                         </div>
                     </li>
-                    <li class="active">
-                        <a href="blog.html">BLOG</a>
-                    </li>
-                    <li class="">
-                        <a href="contact.html">CONTACT US</a>
-                    </li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
                     <li class="nav-label">
                         <a href="tel:+971545831664" class="btn-call-us"><span>Call us:</span> +971 54 583 1664 </a>
                     </li>
-
                 </ul>
                 <div class="menu-right">
                     <div class="custom-area">
-                        Ras Al Khor Industrial Area 2<br />
+                        Ras Al Khor Industrial 2<br />
                         Dubai, UAE
                     </div>
-                    <form role="search" method="get" id="searchform" class="search-btn">
-                        <div class="search-box-menu">
-                            <input type="text" placeholder="Search ...">
-                            <i></i>
-                        </div>
-                    </form>
-                    <ul class="lan-menu">
-                        <li class="dropdown">
-                            <a href="#"><img src="media/en.png" alt="lang" />EN </a>
-                            <ul>
-                                <li><a href="#"><img src="media/it.png" alt="lang" />IT</a></li>
-                                <li><a href="#"><img src="media/es.png" alt="lang" />ES</a></li>
-                            </ul>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
     </nav>
+
+    <!-- Header -->
     <header class="header-image ken-burn-center light" data-parallax="true" data-natural-height="500"
-        data-natural-width="1920" data-bleed="0" data-image-src="media/hd-wide-6.jpg" data-offset="0">
+        data-natural-width="1920" data-bleed="0" data-image-src="{{header_image}}" data-offset="0">
         <div class="container">
-            <h1>Our Blog</h1>
-            <h2>Latest Hydraulics News & Insights</h2>
+            <h1>{{product_title}}</h1>
+            <h2>{{product_subtitle}}</h2>
             <ol class="breadcrumb">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li class="active">{{product_breadcrumb_active}}</li>
             </ol>
         </div>
     </header>
+
+    <!-- Main Content -->
     <main>
         <section class="section-base section-color">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="grid-list" data-columns="3" data-columns-md="2" data-columns-sm="1">
-                            <div class="grid-box">
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-top boxed">
-                                        <a href="blog-post-maintenance.html" class="img-box"><img
-                                                src="media/service/mobile.webp" alt="Hydraulic Maintenance" /></a>
-                                        <div class="caption">
-                                            <p>Jan 17, 2026</p>
-                                            <h3>The Importance of Regular Hydraulic Maintenance</h3>
-                                            <p>Discover why routine checks can save you thousands in repairs and
-                                                downtime for your heavy machinery.</p>
-                                            <a href="blog-post-maintenance.html"
-                                                class="btn btn-sm btn-circle btn-border">Read more</a>
-                                        </div>
-                                    </div>
+                    <!-- Sidebar -->
+                    <div class="col-lg-3">
+                        <div class="fixed-area" data-offset="80">
+                            <div class="menu-inner menu-inner-vertical boxed-area">
+                                <ul>
+                                    <li><a href="products.html">All Products</a></li>
+                                    <li><a href="hydraulic-pumps.html" class="{{nav_pumps_active}}">Hydraulic Pumps</a>
+                                    </li>
+                                    <li><a href="diesel-engines.html" class="{{nav_engines_active}}">Diesel Engines</a>
+                                    </li>
+                                    <li><a href="hydraulic-valves.html" class="{{nav_valves_active}}">Hydraulic
+                                            Valves</a></li>
+                                    <li><a href="hydraulic-cylinders.html" class="{{nav_cylinders_active}}">Hydraulic
+                                            Cylinders</a></li>
+                                    <li><a href="power-packs.html" class="{{nav_power_packs_active}}">Power Packs</a>
+                                    </li>
+                                    <li><a href="accessories.html" class="{{nav_accessories_active}}">Accessories</a>
+                                    </li>
+                                    <li><a href="pto.html" class="{{nav_pto_active}}">PTO</a></li>
+                                </ul>
+                            </div>
+                            <hr class="space-sm" />
+                            <div class="boxed-area light">
+                                <h5>Contact Us</h5>
+                                <p>Get a quote for {{product_title}} today.</p>
+                                <ul class="icon-list icon-line">
+                                    <li><i class="im-phone text-primary"></i> +971 54 583 1664</li>
+                                    <li><i class="im-envelope text-primary"></i> info@hydrotechglobal.com</li>
+                                </ul>
+                                <a href="contact.html" class="btn btn-sm btn-circle btn-icon"><i
+                                        class="im-mail"></i>Contact Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="col-lg-9">
+                        <div class="title">
+                            <h2>{{content_heading}}</h2>
+                            <p>{{content_subheading}}</p>
+                        </div>
+                        <img src="{{content_image}}" alt="{{content_image_alt}}"
+                            class="img-fluid rounded shadow-lg mb-4" style="width: 100%; border-radius: 8px;">
+
+                        <div class="text-content">
+                            <!-- Detailed Description -->
+                            <p class="lead">
+                                {{content_intro}}
+                            </p>
+                            <p>
+                                {{content_description}}
+                            </p>
+
+                            <hr class="space-sm" />
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h4 class="text-bold">Key Features</h4>
+                                    <ul class="icon-list icon-circle">
+                                        {{feature_list_items}}
+                                    </ul>
                                 </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-top boxed">
-                                        <a href="blog-post-trends.html" class="img-box"><img
-                                                src="media/service/seal-fabrication.webp"
-                                                alt="Industrial Hydraulics Trends" /></a>
-                                        <div class="caption">
-                                            <p>Jan 10, 2026</p>
-                                            <h3>Top Trends in Industrial Hydraulics for 2026</h3>
-                                            <p>How automation and smart hydraulics are changing the industry landscape
-                                                and improving efficiency.</p>
-                                            <a href="blog-post-trends.html"
-                                                class="btn btn-sm btn-circle btn-border">Read
-                                                more</a>
-                                        </div>
-                                    </div>
+                                <div class="col-md-6">
+                                    <h4 class="text-bold">Applications</h4>
+                                    <ul class="icon-list icon-check">
+                                        {{application_list_items}}
+                                    </ul>
                                 </div>
-                                <div class="grid-item">
-                                    <div class="cnt-box cnt-box-top boxed">
-                                        <a href="blog-post-oil.html" class="img-box"><img
-                                                src="media/service/hydraulic-hose-crimping.webp"
-                                                alt="Hydraulic Oil Guide" /></a>
-                                        <div class="caption">
-                                            <p>Jan 05, 2026</p>
-                                            <h3>Choosing the Right Hydraulic Oil for Your Equipment</h3>
-                                            <p>A comprehensive guide to understanding viscosity, additives, and
-                                                performance requirements.</p>
-                                            <a href="blog-post-oil.html" class="btn btn-sm btn-circle btn-border">Read
-                                                more</a>
-                                        </div>
-                                    </div>
-                                </div>
+                            </div>
+
+                            <hr class="space-sm" />
+
+                            <div class="alert alert-warning">
+                                <strong>Need Technical Support?</strong> We offer full installation and troubleshooting
+                                services for {{product_title}}. <a href="contact.html">Contact our technical team.</a>
                             </div>
                         </div>
                     </div>
@@ -230,36 +241,27 @@
             </div>
         </section>
     </main>
+
+    <!-- Footer -->
     <footer class="light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
                     <h3>Hydrotech Hydraulic Global</h3>
-                    <p>Premier provider of hydraulic and pneumatic solutions in the UAE and GCC.</p>
+                    <p>Premier provider of hydraulic and pneumatic solutions in the UAE and GCC. <br><strong>ISO
+                            9001:2015 Certified</strong></p>
+                    <div style="margin-bottom: 20px;">
+                        <img src="media/iso-9001-2015.png" alt="ISO 9001:2015 Certified" style="max-height: 80px;">
+                    </div>
                     <div class="icon-links icon-social icon-links-grid social-colors">
-
-
                         <a class="linkedin" href="https://www.linkedin.com/company/hydrotech-engineering-service-dubai/"
-                            target="_blank" aria-label="LinkedIn">
-                            <i class="icon-linkedin"></i>
-                        </a>
-                        <a class="youtube" href="https://www.youtube.com/@hydrotechglobalksa" target="_blank"
-                            aria-label="YouTube">
-                            <i class="icon-youtube"></i>
-                        </a>
-
-                        <a class="instagram" href="https://www.instagram.com/hydrotechengineering.uae/" target="_blank"
-                            aria-label="Instagram">
-                            <i class="icon-instagram"></i>
-                        </a>
+                            target="_blank"><i class="icon-linkedin"></i></a>
+                        <a class="youtube" href="https://www.youtube.com/@hydrotechglobalksa" target="_blank"><i
+                                class="icon-youtube"></i></a>
+                        <a class="instagram" href="https://www.instagram.com/hydrotechengineering.uae/"
+                            target="_blank"><i class="icon-instagram"></i></a>
                         <a class="facebook" href="https://www.facebook.com/profile.php?id=61585350549648"
-                            target="_blank" aria-label="Facebook">
-                            <i class="icon-facebook"></i>
-                        </a>
-
-
-
-
+                            target="_blank"><i class="icon-facebook"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -272,19 +274,11 @@
                 </div>
                 <div class="col-lg-4">
                     <ul class="icon-list icon-line">
-                        <li><i class="im-map-marker"></i>
-                            <p>Ras Al Khor Industrial Area 2, Dubai, UAE</p>
-                        </li>
-                        <li><i class="im-envelope"></i>
-                            <p class="email-fix"><a href="mailto:info@hydrotechglobal.com">info@hydrotechglobal.com</a>
-                            </p>
-                        </li>
-                        <li><i class="im-phone"></i>
-                            <p>+971 54 583 1664</p>
-                        </li>
-                        <li><i class="im-clock"></i>
-                            <p>8am-6pm Mon - Sat</p>
-                        </li>
+                        <li><i class="im-map-marker"></i> Ras Al Khor Industrial Area 2, Dubai, UAE</li>
+                        <li><i class="im-envelope text-primary"></i> <a
+                                href="mailto:info@hydrotechglobal.com">info@hydrotechglobal.com</a></li>
+                        <li><i class="im-phone"></i> +971 54 583 1664</li>
+                        <li><i class="im-clock"></i> 8am-6pm Mon - Sat</li>
                     </ul>
                 </div>
             </div>
@@ -295,6 +289,8 @@
                 <span><a href="contact.html">Contact us</a></span>
             </div>
         </div>
+
+        <!-- Scripts -->
         <link rel="stylesheet" href="themekit/media/icons/iconsmind/line-icons.min.css">
         <script src="themekit/scripts/jquery.min.js"></script>
         <script src="themekit/scripts/main.js"></script>
@@ -303,13 +299,15 @@
         <script src="themekit/scripts/magnific-popup.min.js"></script>
         <script src="themekit/scripts/tab-accordion.js"></script>
         <script src="themekit/scripts/imagesloaded.min.js"></script>
-        <script src="themekit/scripts/progress.js" async></script>
         <script src="themekit/scripts/custom.js" async></script>
         <script src="themekit/scripts/sticky-kit.min.js"></script>
+        <script src="themekit/scripts/contact-form/contact-form.js" async></script>
     </footer>
-    <script>
-        // No custom scripts needed for blog
-    </script>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/971545831664" class="whatsapp-float" target="_blank">
+        <img src="media/logos/whatsapp.png" width="100%" alt="whatsapp">
+    </a>
 </body>
 
 </html>
